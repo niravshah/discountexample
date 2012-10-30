@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="collections-generic:collections-generic:4.01" type="repository">
+    <properties maven-id="collections-generic:collections-generic:4.01" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/collections-generic-4.01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
