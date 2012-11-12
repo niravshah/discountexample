@@ -5,8 +5,8 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 import static shop.order.OrderBuilder.orderBuilder;
 import static shop.order.OrderLineBuilder.orderLineBuilder;
 import static shop.product.ProductBuilder.productBuilder;
