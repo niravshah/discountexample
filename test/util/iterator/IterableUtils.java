@@ -75,7 +75,7 @@ public class IterableUtils {
 
     public static <T> Maybe<T> first(Iterable<? extends T> iterable) {
         try {
-            return maybe(iterable.iterator().next());
+            return (Maybe<T>) maybe(iterable.iterator().next());
         } catch (NoSuchElementException e) {
             return nothing();
         }
@@ -116,7 +116,7 @@ public class IterableUtils {
 
                     @Override
                     public TwoTuple<S, T> next() {
-                        return tuple(firstIterator.next(), secondIterator.next());
+                        return (TwoTuple<S, T>) tuple(firstIterator.next(), secondIterator.next());
                     }
 
                     @Override
