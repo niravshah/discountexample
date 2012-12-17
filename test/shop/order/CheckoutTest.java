@@ -28,38 +28,4 @@ public class CheckoutTest {
         // Then
         assertThat(orderTotal, is(new BigDecimal("100")));
     }
-
-    @Test
-    public void shouldDiscountTotalBy10PercentWhenOrderTotalAtLeast50(){
-        // Given
-
-        // When
-
-
-        // Then
-    }
-
-    @Test
-    public void shouldDiscountTotalThreeForTwo(){
-        // Given
-
-        // When
-
-
-        // Then
-    }
-
-    @Test
-    public void shouldDiscountTotalWithVoucher(){
-        // Given
-
-        // When
-
-
-        // Then
-    }
-
-
-
-
 }
