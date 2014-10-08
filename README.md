@@ -10,7 +10,7 @@ Let your recruiter know when you’ve finished and pushed back and we’ll take 
 ### How do I get set up? ###
 
 * Clone using the URL at the top of the bitbucket home page for this fork
-* Open in your favourite IDE or text editor (we have included project files for Eclipse/STS and IntelliJ to speed this up)
+* Open in your favourite IDE or text editor (we have included project files for gradle, Eclipse/STS and IntelliJ to speed this up)
 
 ### Contribution guidelines ###
 
@@ -22,3 +22,4 @@ Let your recruiter know when you’ve finished and pushed back and we’ll take 
 
 * We think a reasonable solution to this should take 2-4 hours in total.. there's no deadline, most people push something back within a few days
 * Contact the recruiter with any issues and the right person will get back to you
+
