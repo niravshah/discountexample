@@ -1,10 +1,32 @@
 # README #
 
-As discussed on the phone, we have a coding test we'd like you to complete which forms the next stage of the interview process for Capita Employee Benefits (Orbit).  This is a fork which has been created for you specifically, please clone it locally via Git.  Make your changes, commit as often as you need and then push it back to origin when you're happy it's complete.
+As discussed on the phone, we have a coding test we'd like you to complete
+which forms the next stage of the interview process for Capita Employee
+Benefits (Orbit).  This is a fork which has been created for you specifically,
+please clone it locally via Git.  Make your changes, commit as often as you
+need and then push it back to origin when you're happy it's complete.
 
-In the root of the project is a file (Interview Coding Example.docx) with a class diagram and some broad tasks.  The requirements are deliberately vague in order to force you to make some choices of your own.  Please make what assumptions you think are needed based on your own experiences with shopping and discounts. If you wish you could include a .txt file with details of any assumptions made, or leave comments in the code.
+## The Task ##
 
-Let your recruiter know when you’ve finished and pushed back and we’ll take a look.  Happy coding :-)
+Below is the current, simple class model in the existing code.
+
+![model](./model.png)
+
+You must implement the following requirements, adding or changing code as 
+required:
+
+ * 10% off the total for orders totalling &pound;50 or more
+ * 3 items for the price of 2 when buying multiple items of the same product
+ * Discount Voucher
+
+The requirements are deliberately vague in order to force you to make some
+choices of your own.  Please make what assumptions you think are needed based
+on your own experiences with shopping and discounts. If you wish you could
+include a .txt file with details of any assumptions made, or leave comments in
+the code.
+
+Let your recruiter know when you&apos;ve finished and pushed back and we&apos;ll take a
+look.  Happy coding :-)
 
 
 ### How do I get set up? ###
