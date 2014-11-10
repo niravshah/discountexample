@@ -10,14 +10,14 @@ need and then push it back to origin when you're happy it's complete.
 
 Below is the current, simple class model in the existing code.
 
-![model](./model.png)
+![model](model.png)
 
 You must implement the following requirements, adding or changing code as 
 required:
 
- * 10% off the total for orders totalling &pound;50 or more
- * 3 items for the price of 2 when buying multiple items of the same product
- * Discount Voucher
+ 1. 10% off the total for orders totalling &pound;50 or more
+ 2. 3 items for the price of 2 when buying multiple items of the same product
+ 3. Discount Voucher
 
 The requirements are deliberately vague in order to force you to make some
 choices of your own.  Please make what assumptions you think are needed based
