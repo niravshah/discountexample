@@ -10,7 +10,7 @@ need and then push it back to origin when you're happy it's complete.
 
 Below is the current, simple class model in the existing code.
 
-![model](model.png)
+![model](https://bitbucket.org/repo/RoKEXR/images/471713012-model.png)
 
 You must implement the following requirements, adding or changing code as 
 required:
@@ -44,4 +44,3 @@ look.  Happy coding :-)
 
 * We think a reasonable solution to this should take 2-4 hours in total.. there's no deadline, most people push something back within a few days
 * Contact the recruiter with any issues and the right person will get back to you
-
