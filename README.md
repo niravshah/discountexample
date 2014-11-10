@@ -15,7 +15,7 @@ Below is the current, simple class model in the existing code.
 You must implement the following requirements, adding or changing code as 
 required:
 
- 1. 10% off the total for orders totalling &pound;50 or more
+ 1. 10% off the total for orders totalling £50 or more
  2. 3 items for the price of 2 when buying multiple items of the same product
  3. Discount Voucher
 
@@ -25,7 +25,7 @@ on your own experiences with shopping and discounts. If you wish you could
 include a .txt file with details of any assumptions made, or leave comments in
 the code.
 
-Let your recruiter know when you&apos;ve finished and pushed back and we&apos;ll take a
+Let your recruiter know when you've finished and pushed back and we'll take a
 look.  Happy coding :-)
 
 
