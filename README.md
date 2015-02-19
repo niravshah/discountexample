@@ -1,8 +1,9 @@
-# README #
+# Orbit Java Coding Test - Welcome! #
 
 As discussed on the phone, we have a coding test we'd like you to complete
-which forms the next stage of the interview process for Capita Employee
-Benefits (Orbit).  This is a fork which has been created for you specifically,
+which forms the next stage of the interview process for [Orbit](http://www.orbitbenefits.com).  
+
+This is a fork which has been created for you specifically,
 please clone it locally via Git.  Make your changes, commit as often as you
 need and then push it back to origin when you're happy it's complete.
 
@@ -22,8 +23,8 @@ required:
 The requirements are deliberately vague in order to force you to make some
 choices of your own.  Please make what assumptions you think are needed based
 on your own experiences with shopping and discounts. If you wish you could
-include a .txt file with details of any assumptions made, or leave comments in
-the code.
+update or replace this README with details of any assumptions made, or leave 
+suitable comments in the code.
 
 Let your recruiter know when you've finished and pushed back and we'll take a
 look.  Happy coding :-)
