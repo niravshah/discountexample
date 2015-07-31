@@ -11,7 +11,7 @@ need and then push it back to origin when you're happy it's complete.
 
 Below is the current, simple class model in the existing code.
 
-![model](https://bitbucket.org/repo/RoKEXR/images/471713012-model.png)
+![model](model.png)
 
 You must implement the following requirements, adding or changing code as 
 required:
