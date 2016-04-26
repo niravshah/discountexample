@@ -1,5 +1,6 @@
 package shop.resources;
 
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
  */
 @RestController
 @RequestMapping("/discount")
+@Api(value = "ade-3", description = "Discount Coupon Resource")
 public class DiscountCouponResource extends BaseResource {
 
     public static String GET_MESSAGE = "Current Discount Codes applied to your cart : %s";
@@ -28,6 +30,9 @@ public class DiscountCouponResource extends BaseResource {
     public ShoppingCart cart;
 
     @RequestMapping(method = RequestMethod.GET)
+    @ApiOperation(value = "Get Applied Discount Coupons", nickname = "Get Discounts")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success", response = HateoasRepresentation.class)})
     public HttpEntity<HateoasRepresentation> get() {
 
         String currentCoupons = cart.getDiscountCoupons().toString();
@@ -39,7 +44,11 @@ public class DiscountCouponResource extends BaseResource {
     }
 
     @RequestMapping(method = RequestMethod.POST)
+    @ApiOperation(value = "Apply New Discount Coupon", nickname = "Apply Coupon")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success", response = HateoasRepresentation.class)})
     public HttpEntity<HateoasRepresentation> add(@RequestParam("code")
+                                                 @ApiParam(name = "code", required = true,value = "Discount Code to Apply")
                                                          String discountCode) {
         cart.addDiscountCoupon(discountCode);
         HateoasRepresentation rep = getHateoasRepresentation(String.format(ADD_MESSAGE, discountCode), cart);

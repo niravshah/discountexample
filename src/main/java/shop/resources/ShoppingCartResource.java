@@ -1,5 +1,6 @@
 package shop.resources;
 
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
  */
 @RestController
 @RequestMapping("/cart")
+@Api(value = "ade-2", description = "Shopping Cart")
 public class ShoppingCartResource extends BaseResource {
 
     public static String GET_MESSAGE = "Cart Contents";
@@ -32,6 +34,9 @@ public class ShoppingCartResource extends BaseResource {
     private ProductService service;
 
     @RequestMapping(method = RequestMethod.GET)
+    @ApiOperation(value = "Get Shopping Cart", nickname = "Get Cart")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success", response = HateoasRepresentation.class)})
     public HttpEntity<HateoasRepresentation> get() {
         HateoasRepresentation rep = getHateoasRepresentation(GET_MESSAGE, cart);
         rep.add(linkTo(methodOn(ShoppingCartResource.class).get()).withSelfRel());
@@ -41,9 +46,11 @@ public class ShoppingCartResource extends BaseResource {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-
-    public HttpEntity<HateoasRepresentation> add(@RequestParam(value = "product") String product,
-                                                 @RequestParam(value = "qty", defaultValue = "1", required = false) Integer qty) {
+    @ApiOperation(value = "Add Product to Cart", nickname = "Add Product")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success", response = HateoasRepresentation.class)})
+    public HttpEntity<HateoasRepresentation> add(@RequestParam(value = "product") @ApiParam(name="product", value = "Product Code to Add", required = true)String product,
+                                                 @ApiParam(name="qty", value = "Quantity",defaultValue = "1")@RequestParam(value = "qty", defaultValue = "1", required = false) Integer qty) {
         service.addProductToCart(product, qty, cart);
         HateoasRepresentation rep = getHateoasRepresentation(String.format(ADD_MESSAGE, product), cart);
         addHomeLink(rep);
