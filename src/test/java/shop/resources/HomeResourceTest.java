@@ -45,11 +45,11 @@ public class HomeResourceTest {
                         then().
                         contentType(JSON).
                         statusCode(HttpStatus.SC_OK).
-                        body("message", Matchers.is("Home Message")).
+                        body("message", Matchers.is(HomeResource.MESSAGE)).
                         extract().
                         path("_links");
 
-        assertThat(cartLink.size(), equalTo(4));
+        assertThat(cartLink.size(), equalTo(1));
 
     }
 }
