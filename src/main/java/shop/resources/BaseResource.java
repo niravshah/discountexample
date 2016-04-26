@@ -24,4 +24,8 @@ public abstract class BaseResource {
     public void addHomeLink(ResourceSupport rep) {
         rep.add(linkTo(methodOn(HomeResource.class).home()).withRel("home"));
     }
+
+    public void addCartLink(ResourceSupport rep) {
+        rep.add(linkTo(methodOn(ShoppingCartResource.class).get()).withRel("cart"));
+    }
 }

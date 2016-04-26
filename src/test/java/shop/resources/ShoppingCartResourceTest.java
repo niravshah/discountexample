@@ -45,7 +45,7 @@ public class ShoppingCartResourceTest {
                 then().
                 contentType(JSON).
                 statusCode(HttpStatus.SC_OK).
-                body("message", Matchers.is("")).
+                body("message", Matchers.is(ShoppingCartResource.GET_MESSAGE)).
                 body("cart", empty()).
                 extract().
                 path("_links");
@@ -61,7 +61,7 @@ public class ShoppingCartResourceTest {
                 .then()
                 .contentType(JSON)
                 .statusCode(HttpStatus.SC_OK)
-                .body("message", Matchers.is(String.format("")))
+                .body("message", Matchers.is(String.format(ShoppingCartResource.ADD_MESSAGE, product)))
                 .body("cart", is(not(empty())))
                 .body("cart[0].product.productCode", Matchers.is(product));
     }

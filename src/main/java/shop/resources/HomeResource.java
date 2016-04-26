@@ -28,6 +28,7 @@ public class HomeResource extends BaseResource {
     @RequestMapping(method = RequestMethod.GET)
     public HttpEntity<HateoasRepresentation> home(){
         HateoasRepresentation rep = getHateoasRepresentation(MESSAGE, cart);
+        addCartLink(rep);
         rep.add(linkTo(methodOn(HomeResource.class).home()).withSelfRel());
         return new ResponseEntity<>(rep, HttpStatus.OK);
     }
