@@ -1,4 +1,4 @@
-package shop.product;
+package shop.domain.product;
 
 import util.generator.Random;
 

@@ -1,4 +1,4 @@
-package shop.order;
+package shop.domain.order;
 
 import org.junit.Test;
 
@@ -7,9 +7,9 @@ import java.math.BigDecimal;
 import static com.google.common.collect.Lists.newArrayList;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static shop.order.OrderBuilder.orderBuilder;
-import static shop.order.OrderLineBuilder.orderLineBuilder;
-import static shop.product.ProductBuilder.productBuilder;
+import static shop.domain.order.OrderBuilder.orderBuilder;
+import static shop.domain.order.OrderLineBuilder.orderLineBuilder;
+import static shop.domain.product.ProductBuilder.productBuilder;
 
 public class CheckoutTest {
 

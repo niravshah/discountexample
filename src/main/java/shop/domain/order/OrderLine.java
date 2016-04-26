@@ -1,6 +1,6 @@
-package shop.order;
+package shop.domain.order;
 
-import shop.product.Product;
+import shop.domain.product.Product;
 
 import java.math.BigDecimal;
 

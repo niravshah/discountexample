@@ -1,9 +1,9 @@
-package shop.order;
+package shop.domain.order;
 
-import shop.product.Product;
+import shop.domain.product.Product;
 import util.generator.Random;
 
-import static shop.product.ProductBuilder.productBuilder;
+import static shop.domain.product.ProductBuilder.productBuilder;
 
 public class OrderLineBuilder {
 

@@ -1,4 +1,4 @@
-package shop.order;
+package shop.domain.order;
 
 import org.junit.Test;
 
@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
-import static shop.order.OrderLineBuilder.orderLineBuilder;
-import static shop.product.ProductBuilder.productBuilder;
+import static shop.domain.order.OrderLineBuilder.orderLineBuilder;
+import static shop.domain.product.ProductBuilder.productBuilder;
 
 public class OrderLineTest {
     @Test
