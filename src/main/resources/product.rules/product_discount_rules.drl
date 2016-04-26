@@ -1,7 +1,7 @@
 package shop.rules
 
-import shop.boot.discounts.impl.*;
-import shop.order.OrderLine;
+import shop.domain.discounts.impl.*;
+import shop.domain.order.OrderLine;
 
 rule ThreeForTwo when
     o : OrderLine( quantity > 3 )

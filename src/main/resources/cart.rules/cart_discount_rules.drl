@@ -1,17 +1,16 @@
 package shop.rules
 
-import shop.boot.discounts.impl.*;
-import shop.boot.domain.*;
+import shop.domain.discounts.impl.*;
 import java.math.BigDecimal;
 
 rule DiscountCouponOrbit50 when
-    o : CartFact(codes contains "ORBIT50")
+    o : CartDiscountInput(codes contains "ORBIT50")
 then
     insertLogical( new PercentDiscount("COUPON_ORBIT_50",o.cartTotal, new BigDecimal(0.50)) );
 end
 
 rule TenPercentOffFifty when
-    $cart : CartFact( cartTotal > 50.0, codes.empty == true)
+    $cart : CartDiscountInput( cartTotal > 50.0, codes.empty == true)
 then
     insertLogical( new PercentDiscount("TEN_PERCENT_OFF_FIFTY",$cart.cartTotal, new BigDecimal(0.10)) );
 end

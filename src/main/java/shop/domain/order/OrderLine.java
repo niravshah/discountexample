@@ -8,6 +8,8 @@ public class OrderLine {
 
     private final Product product;
     private final Integer quantity;
+    private Integer discountQty=0;
+
 
     public OrderLine(Product product, Integer quantity) {
         this.quantity = quantity;
@@ -24,5 +26,9 @@ public class OrderLine {
 
     public BigDecimal getTotal() {
         return product.getCost().multiply(new BigDecimal(quantity));
+    }
+
+    public void setDiscountQty(Integer discountQty) {
+        this.discountQty = discountQty;
     }
 }

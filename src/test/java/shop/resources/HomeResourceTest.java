@@ -49,7 +49,7 @@ public class HomeResourceTest {
                         extract().
                         path("_links");
 
-        assertThat(cartLink.size(), equalTo(1));
+        assertThat(cartLink.size(), equalTo(2));
 
     }
 }
