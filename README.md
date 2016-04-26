@@ -1,3 +1,32 @@
+# Discount Example - Nirav Shah #
+
+The requirements below have been implemneted using a Spring Boot based REST API using the HATEOAS design patter.
+
+## Running the Example ##
+
+1. Checkout the code locally
+2. A gradle wrapper has been added at the root to build the project
+3. Execute the Gradle build command: `gradlew clean build`
+4. This command will assemble an executable jar file in the `build\lib` folder
+5. Run the executable jar : `java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
+
+In short: `gradlew clean build && java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
+
+The above command will start the Spring Boot Application (with Swagger UI) on port 8080
+
+## Accessing the application ##
+
+### Swagger UI ###
+
+The Swagger UI is accessible at : `http://localhost:8080/api/swagger-ui.html`
+The resources that have been added as part of this example have the tage `ade` ahead of them.
+
+The below fours resources have been implmented
+
+![model](swagger.png)
+
+---
+
 # Orbit Java Coding Test - Welcome! #
 
 As discussed on the phone, we have a coding test we'd like you to complete
