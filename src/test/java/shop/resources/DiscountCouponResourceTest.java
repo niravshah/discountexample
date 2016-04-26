@@ -49,12 +49,12 @@ public class DiscountCouponResourceTest {
                         then().
                         contentType(JSON).
                         statusCode(HttpStatus.SC_OK).
-                        body("message", Matchers.is(String.format("", testCode))).
+                        body("message", Matchers.is(String.format(DiscountCouponResource.ADD_MESSAGE, testCode))).
                         body("coupons", Matchers.contains("ORBIT50")).
                         extract().
                         path("_links");
 
-        assertThat(cartLink.size(), equalTo(5));
+        assertThat(cartLink.size(), equalTo(4));
 
     }
 }
