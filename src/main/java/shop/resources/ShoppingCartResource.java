@@ -46,6 +46,7 @@ public class ShoppingCartResource extends BaseResource {
         service.addProductToCart(product, qty, cart);
         HateoasRepresentation rep = getHateoasRepresentation(String.format(ADD_MESSAGE, product), cart);
         addHomeLink(rep);
+        addProductLinks(rep);
         rep.add(linkTo(methodOn(ShoppingCartResource.class).add(product,1)).withSelfRel());
         return new ResponseEntity<>(rep, HttpStatus.OK);
     }

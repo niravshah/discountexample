@@ -35,4 +35,9 @@ public abstract class BaseResource {
             rep.add(linkTo(methodOn(ShoppingCartResource.class).add(product.name(), 1)).withRel("add_products"));
         }
     }
+
+
+    public void addDiscountCouponLink(ResourceSupport rep) {
+        rep.add(linkTo(methodOn(DiscountCouponResource.class).add("ORBIT50")).withRel("add_discount_coupon"));
+    }
 }

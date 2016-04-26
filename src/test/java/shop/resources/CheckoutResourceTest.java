@@ -56,7 +56,7 @@ public class CheckoutResourceTest {
                 .then()
                 .contentType(JSON)
                 .statusCode(HttpStatus.SC_OK)
-                .body("message", Matchers.is(""))
+                .body("message", Matchers.is(CheckoutResource.MESSAGE))
                 .body("cart", is(not(empty())))
                 .body("cart[0].product.productCode", Matchers.is(product))
                 .body("qualifyingDiscounts.product_line_discounts[0].discountType",Matchers.is("THREE_FOR_TWO"));
