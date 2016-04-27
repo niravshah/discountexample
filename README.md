@@ -2,6 +2,8 @@
 
 The requirements below have been implemented using a Spring Boot based REST API using the HATEOAS design pattern.
 
+## REST Resources ##
+
 There are four REST resources:
 
 1. Home Resource (/api) - This resource responds to a GET call and lists down the functionality that the app exposes
@@ -12,7 +14,7 @@ There are four REST resources:
 
 4. Checkout - This resource responds to the GET method and calculates all the applicable discounts and displays the final cart total.
 
-### Discounts Configuration ###
+## Discounts Configuration ##
 
 The discount logic is implemented using Drools rules. Three discounts have been added currently, but more can easily be added to the drools file.
 
@@ -21,7 +23,6 @@ The discount logic is implemented using Drools rules. Three discounts have been 
 ..* Coupon Code - 'ORBIT50' gives you a discount of 50%
 ..* 10% off £50 
 
-
 ## Running the Example ##
 
 `gradlew clean build && java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
@@ -29,6 +30,10 @@ The discount logic is implemented using Drools rules. Three discounts have been 
 The above command will start the Spring Boot Application (with Swagger UI) on port 8080
 
 ## Accessing the application ##
+
+### Browser ###
+
+`http://localhost:8080/api`
 
 ### Swagger UI ###
 
