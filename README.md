@@ -1,16 +1,30 @@
 # Discount Example - Nirav Shah #
 
-The requirements below have been implemneted using a Spring Boot based REST API using the HATEOAS design patter.
+The requirements below have been implemented using a Spring Boot based REST API using the HATEOAS design pattern.
+
+There are four REST resources:
+
+1. Home Resource (/api) - This resource responds to a GET call and lists down the functionality that the app exposes
+2. Cart Resource (/api/cart) - This resource responds to GET & POST methods. The GET method shows the current items in the cart and the POST method lets you add a new item to the cart.
+3. Discount Coupon Resource (/api/discount) - This resource responds to GET & POST methods to get the current discount coupons added to the cart and add new discount coupon
+
+`currently the only coupon code configured is ORBIT50 for 50% discount. more can be added`
+
+4. Checkout - This resource responds to the GET method and calculates all the applicable discounts and displays the final cart total.
+
+### Discounts Configuration ###
+
+The discount logic is implemented using Drools rules. Three discounts have been added currently, but more can easily be added to the drools file.
+
+1. Product Line Level Discounts - Currently a 3 for 2 discount is configured to be applicable at each product line.
+2. Cart Level Discounts - Either one of the below discounts are applied (if both are selected)
+..* Coupon Code - 'ORBIT50' gives you a discount of 50%
+..* 10% off £50 
+
 
 ## Running the Example ##
 
-1. Checkout the code locally
-2. A gradle wrapper has been added at the root to build the project
-3. Execute the Gradle build command: `gradlew clean build`
-4. This command will assemble an executable jar file in the `build\lib` folder
-5. Run the executable jar : `java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
-
-In short: `gradlew clean build && java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
+`gradlew clean build && java -jar build\libs\discountexample-nirav-shah-0.1.0.jar`
 
 The above command will start the Spring Boot Application (with Swagger UI) on port 8080
 
