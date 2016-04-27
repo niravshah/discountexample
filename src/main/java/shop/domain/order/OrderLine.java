@@ -25,7 +25,7 @@ public class OrderLine {
     }
 
     public BigDecimal getTotal() {
-        return product.getCost().multiply(new BigDecimal(quantity));
+        return product.getCost().multiply(new BigDecimal(quantity - discountQty));
     }
 
     public void setDiscountQty(Integer discountQty) {
