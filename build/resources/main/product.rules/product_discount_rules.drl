@@ -1,0 +1,10 @@
+package shop.rules
+
+import shop.domain.discounts.impl.*;
+import shop.domain.order.OrderLine;
+
+rule ThreeForTwo when
+    o : OrderLine( quantity > 3 )
+then
+    insertLogical( new MultibuyDiscount( o, o.getQuantity()/3, "THREE_FOR_TWO") );
+end

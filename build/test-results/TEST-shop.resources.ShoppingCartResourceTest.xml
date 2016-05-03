@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shop.resources.ShoppingCartResourceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-26T12:48:30" hostname="Noah" time="0.359">
+  <properties/>
+  <testcase name="add" classname="shop.resources.ShoppingCartResourceTest" time="0.224"/>
+  <testcase name="get" classname="shop.resources.ShoppingCartResourceTest" time="0.133"/>
+  <system-out><![CDATA[2016-04-26 13:48:30.350  INFO 34648 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [shop.resources.ShoppingCartResourceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-04-26 13:48:30.352  INFO 34648 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2016-04-26 13:48:30.361  INFO 34648 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2016-04-26 13:48:30.362  INFO 34648 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@5d2bd78f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41f8d82e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@56e0e699, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3cb188d9]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

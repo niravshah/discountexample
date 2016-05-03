@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Discounting.iml" filepath="$PROJECT_DIR$/Discounting.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah.iml" filepath="$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah_main.iml" filepath="$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah_main.iml" group="discountexample_nirav_shah" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discountexample_nirav_shah_test.iml" group="discountexample_nirav_shah" />
